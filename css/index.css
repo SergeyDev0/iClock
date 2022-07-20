@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+header > .wrapper-logo > .fa-apple{
+    color: white;
+    font-size: 3rem;
+}
+.clock-wrapper{
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    text-align: center;
+}
+.clock > .time{
+    margin-bottom: 4rem;
+    font-size: 8rem;
+    color: white;
+}
+.clock > .date{
+    font-size: 3rem;
+    color: white;
+}
