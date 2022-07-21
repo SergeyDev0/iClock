@@ -18,10 +18,14 @@
             <h1 class="time"></h1>
             <p class="date"></p>
         </div>
-        <div class="todo-list__wrapper">
-            <span class="title">
-                <img src="./icons/itodo.svg" alt="iToDo">
-            </span>
+        <button class="button__open-list fa-light fa-list"></button>
+        <div class="todo-list__wrapper todo-list__hide">
+            <header class="todo-list__header">
+                <button class="back fa-solid fa-arrow-left"></button>
+                <span class="title">
+                    <img src="./icons/itodo.svg" alt="iToDo">
+                </span>
+            </header>
             <ul class="todo-list">
                 <li></li>
             </ul>
@@ -30,6 +34,7 @@
             </button>
         </div>
     </main>
-    <script src="./js/index.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/todoList.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ body{
     background-color: rgb(10, 10, 10);
     font-family: 'SF';
     font-weight: 200;
+    overflow: hidden;
 }
 ul{
     list-style-type: none;
@@ -19,6 +20,7 @@ button, input{
     background: inherit;
     color: white;
     outline: none;
+    border: none;
 }
 button{
     cursor: pointer;
@@ -62,9 +64,44 @@ button{
     flex-direction: column;
     background-color: rgb(8, 8, 8);
     box-shadow: 0 -2px 10px -2px rgb(26, 26, 26);
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+    z-index: 2;
 }
-.todo-list__wrapper > span{
-    margin: 1rem auto 0 auto;
+.todo-list__hide{
+    transform: translateX(460px);
+    z-index: -3;
+    -webkit-transform: translateX(460px);
+    -moz-transform: translateX(460px);
+    -ms-transform: translateX(460px);
+    -o-transform: translateX(460px);
+}
+.button__open-list{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.6rem;
+}
+.todo-list__wrapper .title{
+    margin: 0 auto;
+}
+.todo-list__wrapper .back{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 300;
+}
+.todo-list__header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+    position: relative;
 }
 .todo-list{
     flex-grow: 3;
