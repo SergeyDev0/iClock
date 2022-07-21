@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iClock</title>
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper-logo">
-            <i class="fa-brands fa-apple"></i>
-        </div>
-    </header>
     <main class="clock-wrapper">
         <div class="clock">
+            <div class="wrapper-logo">
+                <span class="fa-brands fa-apple"></span>
+            </div>
             <h1 class="time"></h1>
             <p class="date"></p>
+        </div>
+        <div class="todo-list__wrapper">
+            <span class="title">
+                <img src="./icons/itodo.svg" alt="iToDo">
+            </span>
+            <ul class="todo-list">
+                <li></li>
+            </ul>
+            <button class="todo-list__button-create">
+                <span class="fa-solid fa-plus"></span>
+            </button>
         </div>
     </main>
     <script src="./js/index.js"></script>

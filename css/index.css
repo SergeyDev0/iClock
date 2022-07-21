@@ -9,20 +9,28 @@ body{
     height: 100vh;
     width: 100%;
     background-color: rgb(10, 10, 10);
+    font-family: 'SF';
+    font-weight: 200;
 }
-header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1.5rem;
+ul{
+    list-style-type: none;
 }
-header > .wrapper-logo > .fa-apple{
+button, input{
+    background: inherit;
     color: white;
-    font-size: 3rem;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.clock > .wrapper-logo > span{
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 1.5rem;
 }
 .clock-wrapper{
+    position: relative;
     flex-grow: 3;
     display: flex;
     align-items: center;
@@ -30,13 +38,54 @@ header > .wrapper-logo > .fa-apple{
 }
 .clock{
     text-align: center;
+    user-select: none;
 }
 .clock > .time{
     margin-bottom: 4rem;
     font-size: 8rem;
     color: white;
+    font-family: 'SF';
+    font-weight: 300;
 }
 .clock > .date{
     font-size: 3rem;
     color: white;
+}
+.todo-list__wrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 450px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(8, 8, 8);
+    box-shadow: 0 -2px 10px -2px rgb(26, 26, 26);
+}
+.todo-list__wrapper > span{
+    margin: 1rem auto 0 auto;
+}
+.todo-list{
+    flex-grow: 3;
+}
+.todo-list__button-create{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.todo-list__button-create > span{
+    height: 28px;
 }
